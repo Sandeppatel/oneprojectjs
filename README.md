@@ -43,12 +43,11 @@ html , body{
 
 ## js
 
+ const clocks = document.getElementById('clock')
 
-const clock = document.getElementById('clock')
-
-
-setInterval(function () {
-    let date = new Date();
-    clock.innerHTML = date.toLocaleTimeString();
-   
-}, interval);
+ setInterval(function ()  {
+    const date = new Date();
+   clocks.innerHTML =  date.toLocaleTimeString();
+ 
+ }, 1000);
+ 
